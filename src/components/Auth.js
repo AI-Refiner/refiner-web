@@ -13,14 +13,6 @@ const Auth = ({ children }) => {
   const location = useLocation();
   const [user, setUserData] = useState({});
 
-  // check local storage for user data, set state if found
-  // useEffect(() => {
-  //   const localUser = localStorage.getItem("user");
-  //   if (localUser != "undefined") {
-  //     setUserData(JSON.parse(localUser));
-  //   }
-  // }, []);
-
   useEffect(() => {
     var sub =
       new URLSearchParams(location.search).get("sub") ||

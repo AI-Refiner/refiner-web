@@ -61,9 +61,6 @@ const SideBar = () => {
       <MenuItem onClick={() => handleMenuItemClick("/account")}>
         <AccountCircle size="20px" /> &nbsp; Account
       </MenuItem>
-      {/* <MenuItem onClick={() => handleMenuItemClick("/settings")}>
-        <Settings size="20px" /> &nbsp; Settings
-      </MenuItem> */}
       <Spacer></Spacer>
       <MenuItem onClick={() => logout()}>
         <Logout size="20px" />
